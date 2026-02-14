@@ -5,21 +5,21 @@
 class AgentCollab < Formula
   desc "P2P-based distributed collaboration system for AI agents"
   homepage "https://github.com/vanillacake369/agent-collab"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.0/agent-collab_v0.3.0_darwin_amd64.tar.gz"
-      sha256 "890f2c8ced64780673cfa96949b224bd2e6804b74193d1a2ec592fab08eb8b70"
+      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.1/agent-collab_v0.3.1_darwin_amd64.tar.gz"
+      sha256 "d78f1aef424dac81046b396d63b2b316b056bde7b1e5ca50d3a441794fb3172e"
 
       def install
         bin.install "agent-collab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.0/agent-collab_v0.3.0_darwin_arm64.tar.gz"
-      sha256 "27f74bce095a39f957004001989c2d0700bc41cb25dc4173d6016a0ff35d9529"
+      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.1/agent-collab_v0.3.1_darwin_arm64.tar.gz"
+      sha256 "06e8a3184d40b51d064729d20cc1bf99aed6f623426e1fa59d0bfac8dceb580d"
 
       def install
         bin.install "agent-collab"
@@ -29,15 +29,15 @@ class AgentCollab < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.0/agent-collab_v0.3.0_linux_amd64.tar.gz"
-      sha256 "c3d2f42ddea26ae6b371167401717859ac2e42b2b7afb84fa088c42f248b25bc"
+      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.1/agent-collab_v0.3.1_linux_amd64.tar.gz"
+      sha256 "cd2e324d9e603bd7b0a99317ba4a1f8cf65224c39cb9cf354a50375978eb0a79"
       def install
         bin.install "agent-collab"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.0/agent-collab_v0.3.0_linux_arm64.tar.gz"
-      sha256 "f6551ccffd9ea2da8bf80daf5728797c65e89ab15c1cf363c55758894f9d9434"
+      url "https://github.com/vanillacake369/agent-collab/releases/download/v0.3.1/agent-collab_v0.3.1_linux_arm64.tar.gz"
+      sha256 "a2186d9670089ed592b1fbd13dc8918c3621337c3e6d9fc2b2890bf3ace89da5"
       def install
         bin.install "agent-collab"
       end
